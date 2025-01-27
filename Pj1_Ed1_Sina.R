@@ -9,6 +9,8 @@ library(ggplot2)
 ggplot(mtcars, aes(x = hp, y = mpg)) +
   geom_point(color = "darkgreen", size = 2) +
   geom_smooth(method = "lm", color = "orange", se = FALSE) +
+  geom_hline(yintercept = 0, color = "black", size = 0.5) +  # add X-axis
+  geom_vline(xintercept = 0, color = "black", size = 0.5) +  # add Y-axis
   labs(
     title = "Horsepower vs MPG",
     x = "Horsepower (hp)",
