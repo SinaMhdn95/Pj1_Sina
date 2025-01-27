@@ -17,4 +17,7 @@ ggplot(mtcars, aes(x = hp, y = mpg)) +
     y = "Miles Per Gallon (mpg)"
   ) +
   theme_minimal() +
-  theme ()
+  theme (
+    plot.title = element_text(face = "bold", hjust = 0.5, size = 16),
+    axis.title = element_text(size = 12)
+  )
