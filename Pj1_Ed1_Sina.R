@@ -18,6 +18,8 @@ ggplot(mtcars, aes(x = hp, y = mpg)) +
   ) +
   theme_minimal() +
   theme (
+    panel.background = element_rect(fill = "black", color = NA),
+    plot.background = element_rect(fill = "gray20", color = NA),  
     plot.title = element_text(face = "bold", hjust = 0.5, size = 16),
     axis.title = element_text(size = 12)
   )
